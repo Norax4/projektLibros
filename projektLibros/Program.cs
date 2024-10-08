@@ -1,14 +1,14 @@
 ﻿using projektLibros;
 
 bool salir = false;
+List<Libro> listaLibros = new List<Libro>();
+
 Dictionary<int, Action> menuOpciones = new Dictionary<int, Action>
 {
     {1, IngresarDatosLibro },
     {2, ListarDatosLibro },
     {5, () => salir = true}
 };
-
-List<Libro> listaLibros = new List<Libro>();
 
 while (!salir)
 {
